@@ -1,0 +1,709 @@
+/* ============ ESTILOS BASE Y RESET ============ */
+:root {
+    --primary-color: #2196F3;
+    --secondary-color: #ff5722;
+    --text-color: #212121;
+    --light-gray: #f1f1f1;
+    --white: #fff;
+    --black: #000;
+    --shadow: 0 2px 5px rgba(0,0,0,0.1);
+    --transition: all 0.3s ease;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-top: 0;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-container h2 {
+    font-size: 22px;
+    color: var(--primary-color);
+    font-weight: 1000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* ============ HEADER ============ */
+
+.main-header {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0 20px;
+    z-index: 1100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.logo-center img {
+    height: 75px;
+}
+
+/* ============ ESTRUCTURA PRINCIPAL ============ */
+.main-content {
+    margin-left: 300px;
+    padding: 0 40px 20px 20px;
+    transition: var(--transition);
+}
+
+/* ============ SIDEBAR ============ */
+.sidebar {
+    position: fixed;
+    top: 60px;
+    width: 300px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    padding: 16px;
+    z-index: 1200;
+    overflow-y: auto;
+    transition: var(--transition);
+}
+
+.sidebar-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ============ BOTÓN DE TEMA EN SIDEBAR ============ */
+.theme-btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 0 16px;
+}
+
+.theme-btn {
+    background-color: rgba(255,255,255,0.2);
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: var(--transition);
+    width: 100%;
+    max-width: 200px;
+}
+
+.theme-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--black);
+}
+
+/* ============ MENÚ OPCIONES SIDEBAR============ */
+.menu-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    display: block;
+    padding: 12px 16px;
+    color: var(--white);
+    text-decoration: none;
+    margin: 4px 0;
+    border-radius: 4px;
+    transition: var(--transition);
+    font-weight: 500;
+    font-size:x-large;
+}
+
+.menu-item:hover {
+    background-color: var(--secondary-color);
+    color: var(--black);
+}
+
+/* ============ ENCABEZADO MÓVIL ============ */
+.mobile-header {
+    display: none;
+    position: fixed;
+    width: 100%;
+    padding: 12px 16px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 1.6rem;
+    z-index: 90;
+    align-items: center;
+}
+
+.mobile-menu-btn {
+    margin-right: 16px;
+    color: var(--white);
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* ============ OVERLAY ============ */
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 80;
+    cursor: pointer;
+}
+
+/* ============ CONTENIDO ============ */
+.section-container {
+    font-size: 1rem;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.section-title {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.blue-line {
+    width: 100%;
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* Estilo para el botón de cambio de tema */
+.theme-switch {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1001; 
+}
+
+/* Ajustes adicionales para el contenedor del botón */
+.theme-switch__container {
+    width: var(--container-width);
+    height: var(--container-height);
+    background-color: var(--container-light-bg);
+    border-radius: var(--container-radius);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+/* ============ IMÁGENES ============ */
+.logo {
+    display: block;
+}
+
+.content-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ============ SWIPER FOTOS ============ */
+.swiper {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+/* ============ SECCIÓN TEAM ============ */
+.team-container {
+    padding: 0 16px;
+    margin: 40px 0;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+.team-column {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.team-card {
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border-radius: 5px;
+    overflow: hidden;
+    height: -webkit-fill-available;
+    text-align: center;
+}
+
+.team-card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+}
+
+.team-card img {
+    width: 100%;
+    height: 60%;
+    object-fit: fill;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.orange-card {
+    background-color: var(--secondary-color);
+    color: var(--black);
+}
+
+.white-card {
+    background-color: var(--white);
+    color: var(--text-color);
+}
+
+.centered-card-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.centered-card {
+    max-width: 500px;
+    width: 100%;
+}
+
+figure {
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: auto;
+}
+figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+}
+
+/* ============ BOTÓN DE AUDIO ============ */
+.audio-btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.audio-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.audio-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    transform: scale(1.05);
+}
+
+.audio-btn::before {
+    content: "🔊";
+    font-size: 1.2rem;
+}
+
+/* ============ FORMULARIO DE CONTACTO ============ */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(33,150,243,0.5);
+}
+
+textarea.form-input {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: var(--transition);
+    font-size: 1.1rem;
+}
+
+.submit-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* ============ ESTILOS RESPONSIVOS ============ */
+@media screen and (max-width: 992px) {
+    .main-content {
+        margin-left: 0;
+        padding: 20px 20px 20px;
+    }
+    
+    .sidebar {
+        display: none;
+        width: auto;
+    }
+    
+    .mobile-header {
+        display: block
+        
+    }
+    .sidebar-container {
+        display: none;
+    }
+    .section-container {
+        margin: 20px 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .header-logo {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-grid {
+        flex-direction: column;
+    }
+    
+    .team-column {
+        min-width: 100%;
+    }
+    
+    .team-card img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .header-logo {
+        width: 100%;
+    }
+}
+
+/* 🌙 MODO OSCURO */
+body.dark-theme {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+body.dark-theme .main-header,
+body.dark-theme .sidebar,
+body.dark-theme .mobile-header {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+body.dark-theme .menu-item {
+    color: #f5f5f5;
+}
+
+body.dark-theme .menu-item:hover {
+    background-color: #ff9800;
+    color: black;
+}
+
+body.dark-theme .section-container {
+    background-color: #1f1f1f;
+    color: #f5f5f5;
+}
+
+body.dark-theme .team-card.white-card {
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+body.dark-theme .submit-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+body.dark-theme .submit-btn:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+body.dark-theme .form-input {
+    background-color: #2a2a2a;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+body.dark-theme footer {
+    background-color: #1e1e1e;
+    color: #f5f5f5; 
+}
+
+body.dark-theme .footer-text {
+    color: #f5f5f5; 
+}
+
+body.dark-theme .footer-logo {
+    filter: brightness(0.8);
+}
+
+/* ============ VIDEO ============ */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 28.125%;
+    height: 0;
+    max-width: 480px;
+    margin: 20px auto;
+    margin-top: 30px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ============ FOOTER CON BOTONES DE ICONOS SOCIALES ============ */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: white;
+    order: 2;
+}
+
+.footer-logo {
+    position: absolute;
+    right: 20px;
+    height: 90px;
+    width: auto;
+    bottom: 20px;
+}
+
+.wrapper {
+    display: inline-flex;
+    margin-bottom: 15px;
+}
+
+.wrapper .icon {
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon span {
+    display: block;
+    height: 30px;
+    width: 30px;
+    color: #000;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1); 
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon span i {
+    line-height: 30px; 
+    font-size: 12px; 
+}
+
+.wrapper .icon .tooltip {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+    color: #fff;
+    padding: 5px 9px; 
+    font-size: 10px; 
+    font-weight: 500;
+    border-radius: 12px;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -35px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.icon .tooltip:before {
+    position: absolute;
+    content: "";
+    height: 8px; 
+    width: 8px; 
+    background: inherit;
+    left: 50%;
+    bottom: -3px; 
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.wrapper .icon:hover span {
+    color: #fff;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip {
+    background: #3B5999;
+}
+
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltip {
+    background: #46C1F6;
+}
+
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltip {
+    background: #e1306c;
+}
+
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltip {
+    background: #333;
+}
+
+.wrapper .youtube:hover span,
+.wrapper .youtube:hover .tooltip {
+    background: #DE463B;
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a dardos de espuma >> tu web sobre Nerf</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Menú barra lateral -->
+    <nav class="sidebar" id="mySidebar">
+        <div class="sidebar-container">
+            <img src="img/dardosdeespumalogo.png" alt="logoespuma" class="logo">
+        </div>
+        <div class="menu-items">
+            <a href="#Inicio" class="menu-item">Inicio</a>
+            <a href="#Historia" class="menu-item">Historia</a>
+            <a href="#Evolucion" class="menu-item">Evolución</a>
+            <a href="#Curiosidades" class="menu-item">Curiosidades</a>
+            <a href="#Contacto" class="menu-item">Contacto</a>
+        </div>
+        <div class="theme-btn-container">
+            <button class="theme-btn">☀️ / 🌙</button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-center">
+                <img src="img/dardosdeespumalogo2.png" alt="Logo">
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú superior en pantallas pequeñas -->
+    <header class="mobile-header">
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        <span>Dardos de Espuma</span>
+    </header>
+
+    <!-- Overlay para cerrar menú en móvil -->
+    <div class="overlay" id="myOverlay" onclick="toggleMenu()" title="close side menu"></div>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+
+        <!-- Inicio -->
+        <section class="section-container" id="Inicio">
+            <h1 class="section-title">Bienvenido a Dardos de Espuma</h1>
+            <hr class="blue-line">
+            <p>Bienvenido a la página de los amantes del mundo de las pistolas de NERF, un lugar donde puedes encontrar la historia de la marca, algunas curiosidades sobre estas pistolas y más noticias relacionadas con este apasionante mundo de diversión.</p>
+            <p>El universo de los juguetes se transformó con la llegada de las pistolas Nerf. Estos divertidos juguetes de espuma que disparan dardos se han convertido en imprescindibles en muchos hogares y salas de juego. Disparar con sofisticados lanzadores de juguete es divertido, emocionante, social y también una buena manera de pasar el rato en familia.</p>
+            <p>Si quieres saber porque son tan populares, ¡sigue leyendo! Vamos a sumergirnos en los secretos de estos fascinantes juguetes y entender la ciencia que los hace tan especiales.</p>
+        </section>
+
+        <!-- Historia -->
+        <section class="section-container" id="Historia">
+            <h1 class="section-title">Historia</h1>
+            <hr class="blue-line">
+            <p>En 1970, <u>Parker Brothers</u> presentó al mundo una bola de espuma de 10 centímetros que se convertiría rápidamente en un juguete icónico y en uno de los productores de juguetes más reconocidos del siglo pasado.</p>
+            <p>La historia detrás de esta pelota Nerf es fascinante. Todo comenzó cuando el inventor de "Twister" llamado <u><b>Reyn Guyer</b></u> presentó su idea de un juego de voleibol de interior a Parker Brothers (más conocidos por juegos de mesa como Cluedo y Monopoly) en 1969.</p>
+            <p>Aunque el juego no fue aceptado, la pelota en sí misma despertó interés. Después de un poco de desarrollo, la pelota fue lanzada al mercado y ganó popularidad rápidamente gracias a su promesa de cero daños en interiores y cero lesiones.</p>
+            <p>Nerf Ball, el primer lanzamiento de NERF. La pelota Nerf fue anunciada como la <u>«primera pelota de interior oficial del mundo»</u>. Se promocionaba con la línea <u>«Tíralo adentro; No puedes dañar las lámparas ni romper ventanas. No puedes lastimar a bebés o ancianos»</u>. Incluso la palabra <u>«Nerf»</u> se convirtió en sinónimo de seguridad. La espuma utilizada para la pelota Nerf era suave y no causaba ningún daño, lo que la hacía perfecta para jugar dentro de la casa. Para finales de ese año, se habían vendido más de <b>4 millones de bolas Nerf.</b></p>
+            <p>De una sola pelota de 10 centímetros, la línea de productos de Nerf creció rápidamente. Se añadieron discos y aros de baloncesto, también conocidos como <b>«Nerfoops»</b>, y pelotas de beisbol. Sin embargo, fue en 1991 cuando Nerf presentó su juguete más icónico: <b>el bláster</b>. Esta arma de juguete, que disparó dardos de espuma, se convirtió en un éxito instantáneo. La línea de productos de Nerf se ha expandido continuamente desde entonces, y hoy en día, la marca Nerf es sinónimo de diversión y seguridad.</p>
+            <img src="img/origin.jpg" alt="Primeros productos Nerf" class="content-image">
+        </section>
+
+        <!-- Evolución de la marca -->
+        <section class="section-container" id="Evolucion">
+            <h1 class="section-title">Evolución de la marca</h1>
+            <hr class="blue-line">
+            <p>Durante los años 90, Nerf tuvo la oportunidad de expandirse rápidamente gracias a su asociación con Hasbro. Con una amplia gama de recursos a su disposición, Nerf se dedicó a diseñar y producir una serie de blásteres innovadores que capturaron la imaginación de los niños de todo el mundo. Los niños podrían elegir entre una variedad de blásteres que dispararan dardos, misiles, pelotas e incluso dardos con ventosa.</p>
+            <p>Además, un nuevo eslogan llamado <b>«It's Nerf or Nothin'!» («¡Es Nerf o Nada!»)</b> se convirtió en un éxito rotundo, aumentando las ventas y manteniendo a los consumidores alejados de la competencia.</p>
+            <div class="audio-btn-container">
+                <button class="audio-btn">
+                    <audio src="nerforothing.mp3"></audio>
+                    Escuchar eslogan
+                </button>
+            </div>
+            <p>La ventaja distintiva de Nerf radicó en su innovación en armamento a base de espuma. La idea fue tan innovadora que tanto los padres como los niños acudieron en masa a las jugueterías. Los padres apreciaron el hecho de que los dardos no pudieran causar ningún daño en el interior y a los niños les encantaba poder dispararse con sus amigos sin hacerse daño y poder reutilizar los dardos fácilmente.</p>
+            
+        <!-- Slide imagenes -->
+<section class="section-container" id="Swiper">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/1.jpg" alt="1">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/2.jpg" alt="2">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/3.jpg" alt="3">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/4.jpg" alt="4">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/5.jpg" alt="5">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/6.jpg" alt="6">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/7.jpg" alt="7">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/8.jpg" alt="8">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/9.jpg" alt="9">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/10.jpg" alt="10">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/11.jpg" alt="11">
+            </div>
+        </div>
+    </div>
+</section>
+            <h1 class="section-title">Evolución del logotipo</h1>
+            <hr class="blue-line">
+            <p>A lo largo de los años, el logotipo de Nerf ha cambiado con las tendencias del diseño gráfico y el crecimiento de la marca. Desde un estilo retro hasta el moderno y dinámico actual, cada logo representa una etapa importante en su evolución.</p>
+        
+            <!-- Video de YouTube -->
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/UzsmalOIBuE?mute=1"
+                    style="border: none;"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+
+        <!-- Curiosidades -->
+        <section class="section-container" id="Curiosidades">
+        <h1 class="section-title">Curiosidades</h1>
+        <hr class="blue-line">
+        <p>Se fabrican más de <b>445.277.777 de dardos al año</b>. Alguien con mucho tiempo libre ha calculado que, en 5 años, se fabrican tantos dardos que <b>podrían dar la vuelta al mundo 4 veces</b> si los pusiéramos en fila.</p>
+        <p>Alguien incluso ha calculado que Nerf lleva fabricados más de <b>4.007.500.000</b> proyectiles desde que se lanzaron las primeras Nerf allá por los años 90.</p>
+
+            <h2><u>Las más grandes y las más pequeñas</u></h2>
+            <div class="team-grid">
+                <!-- Primera columna -->
+                
+                <div class="team-column">
+                    <!-- Fila 1, Col 1 -->
+                    <div class="team-card orange-card">
+                        <a href="https://www.youtube.com/watch?v=57MKxz4pJKE&ab_channel=MarkRober" target="_blank" rel="noopener noreferrer">
+                            <figure>
+                                <img src="img/biggun.jpg" alt="biggun">
+                                <figcaption>Imagen de Mark Rober</figcaption>
+                            </figure>
+                        </a>
+                        <div class="card-content">
+                            <h3><b><u>Mark Rober</u></b></h3>
+                            <p>Mark B. Rober es un YouTuber, ingeniero e inventor estadounidense. Es conocido por sus videos de YouTube sobre ciencia popular, artilugios de bricolaje e ideas creativas.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Fila 2, Col 1 -->
+                    <div class="team-card orange-card">
+                        <a href="https://www.youtube.com/watch?v=9c2NqlUWZfo&t=2s&ab_channel=MarkRober" target="_blank" rel="noopener noreferrer">
+                            <figure>
+                                <img src="img/smallest.jpg" alt="smallest">
+                                <figcaption>Imagen de Mark Rober</figcaption>
+                            </figure>
+                        </a>
+                        <div class="card-content">
+                            <h3><b><u>Mark Rober</u></b></h3>
+                            <p>Mark B. Rober también tiene el Record Guinees por crear la pistola más pequeña del mundo, siendo esta más pequeña que un grano de arroz.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Segunda columna -->
+                <div class="team-column">
+
+                    <!-- Fila 1, Col 2 -->
+                    <div class="team-card orange-card">
+                        <a href="https://www.youtube.com/watch?v=rlG8dpDVVqU&ab_channel=GuinnessWorldRecords/" target="_blank" rel="noopener noreferrer">
+                        <figure>
+                            <img src="img/longshot.jpg" alt="Michael Longshot">
+                            <figcaption>Imagen del Guinness World Records</figcaption>
+                        </figure>
+                        </a>
+                        <div class="card-content">
+                            <h3><b><u>Michael Pick</u></b></h3>
+                            <p>Michael Pick es un Youtuber y tik toker estadounidense. Es conocido por sus videos de YouTube haciendo objetos en sus versiones minimalistas y gigantes.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Fila 2, Col 2 -->
+                    <div class="team-card orange-card">
+                        <a href="https://superimpulse.com/worlds-smallest/" target="_blank" rel="noopener noreferrer">
+                        <figure>
+                            <img src="img/allsmall.jpg" alt="Super Impulse">
+                            <figcaption>Imagen de la colección World's Smallest</figcaption>
+                        </figure>
+                        </a>
+                        <div class="card-content">
+                            <h3><b><u>Nerf Smallest</u></b></h3>
+                            <p>La compañía Super Impulse sacó su línea de productos "World's Smallest", donde han conseguido hacer las Nerf más pequeñas del mercado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h2><u>El evento más grande de la historia</u></h2>
+            
+            <!-- Tarjeta centrada (quinta) -->
+            <div class="centered-card-container">
+                <div class="team-card white-card centered-card">
+                    <a href="https://www.blasterbattle.com/" target="_blank" rel="noopener noreferrer">
+                    <figure>
+                        <img src="img/Jared_logo.webp" alt="Evento más grande">
+                        <figcaption>Imagen del logo de blasterbattle</figcaption>
+                    </figure>
+                    </a>
+                    <div class="card-content">
+                        <h3><b><u>Jared Guynes</u></b></h3>
+                        <p>Jared Guynes es un YouTuber y tik toker americano que tiene el Record Guinness por crear el evento con pistolas Nerf con más afluencia de la historia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="section-container" id="Contacto">
+            <h1 class="section-title">Contacto</h1>
+            <hr class="blue-line">
+            <p>¿Tienes algo que contarnos? Rellena los campos con tu información y tu mensaje y háznoslo saber :) Nos encanta conocer a gente nueva!</p>
+            <form action="/action_page.php" class="contact-form">
+                <div class="form-group">
+                    <label for="name"><b>Nombre</b></label>
+                    <input class="form-input" type="text" id="name" name="Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><b>Email</b></label>
+                    <input class="form-input" type="email" id="email" name="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message"><b>Mensaje</b></label>
+                    <textarea class="form-input" id="message" name="Message" required></textarea>
+                </div>
+                
+<div class="form-group">
+    <label for="contactType"><b>Tipo de contacto adicional</b></label>
+    <select class="form-input" id="contactType" name="ContactType">
+        <option value="ninguno">Ninguno</option>
+        <option value="telefono">Teléfono</option>
+        <option value="movil">Móvil</option>
+    </select>
+</div>
+<div class="form-group" id="additionalContactGroup" style="display: none;">
+    <label for="additionalContact"><b>Introduce el dato adicional</b></label>
+    <input class="form-input" type="text" id="additionalContact" name="AdditionalContact">
+</div>
+
+
+                <button type="submit" class="submit-btn">¡Disparar Mensaje! 🔫</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+
+        // Funciones para abrir/cerrar el menú en móvil
+        function toggleMenu() {
+            const sidebar = document.getElementById("mySidebar");
+            const overlay = document.getElementById("myOverlay");
+            
+            if (sidebar.style.display === "block") {
+                sidebar.style.display = "none";
+                overlay.style.display = "none";
+            } else {
+                sidebar.style.display = "block";
+                overlay.style.display = "block";
+            }
+        } 
+    </script>
+
+<script>
+    document.querySelector(".theme-btn").addEventListener("click", () => {
+        document.body.classList.toggle("dark-theme");
+    });
+</script>
+
+<script>
+    document.getElementById("contactType").addEventListener("change", function () {
+        const inputGroup = document.getElementById("additionalContactGroup");
+        if (this.value === "telefono" || this.value === "movil") {
+            inputGroup.style.display = "block";
+        } else {
+            inputGroup.style.display = "none";
+        }
+    });
+</script>
+
+<footer>
+    <!--BOTONES ANIMADOS FOOTER-->
+    <div class="wrapper">
+        <a href="https://www.facebook.com" class="icon facebook">
+            <div class="tooltip">Facebook</div>
+            <span><i class="fab fa-facebook-f"></i></span>
+        </a>
+        <a href="https://twitter.com" class="icon twitter">
+            <div class="tooltip">Twitter</div>
+            <span><i class="fab fa-twitter"></i></span>
+        </a>
+        <a href="https://www.instagram.com" class="icon instagram">
+            <div class="tooltip">Instagram</div>
+            <span><i class="fab fa-instagram"></i></span>
+        </a>
+        <a href="https://github.com/rsunye/M04-UF1.git" class="icon github">
+            <div class="tooltip">Github</div>
+            <span><i class="fab fa-github"></i></span>
+        </a>
+        <a href="https://www.youtube.com" class="icon youtube">
+            <div class="tooltip">YouTube</div>
+            <span><i class="fab fa-youtube"></i></span>
+        </a>
+    </div>
+    <p class="footer-text">© 2025 Dardos de Espuma. Todos los derechos reservados.</p>
+    <img src="img/logodiana.png" alt="logoespuma" class="footer-logo">
+</footer>
+
+</body>
+</html>
