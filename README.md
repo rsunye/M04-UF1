@@ -1,5 +1,4 @@
 README
-
 Descripción del Proyecto
 
 "Dardos de Espuma" es una página web dedicada a los amantes de las pistolas Nerf. Ofrece información sobre la historia, evolución y curiosidades de estos juguetes, junto con imágenes interactivas, videos y un formulario de contacto. La página está diseñada para ser responsive y cuenta con un tema claro/oscuro para mejorar la experiencia del usuario.
