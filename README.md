@@ -1,4 +1,4 @@
-README - Dardos de Espuma
+README
 
 Descripción del Proyecto
 
